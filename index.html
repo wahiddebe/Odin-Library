@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Library</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Odin Library</h1>
+    <button class="btn btn-primary" id="newBookBtn">+ Add Book</button>
+  </header>
+
+  <main class="library-grid" id="libraryGrid"></main>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <h2>Add New Book</h2>
+      <form id="bookForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" id="author" required>
+        </div>
+        <div class="form-group">
+          <label for="pages">Page</label>
+          <input type="number" id="pages" min="1" required>
+        </div>
+        <div class="form-group form-group-checkbox">
+          <input type="checkbox" id="read">
+          <label for="read">Did you read?</label>
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="btn" id="closeModalBtn">Cance</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
